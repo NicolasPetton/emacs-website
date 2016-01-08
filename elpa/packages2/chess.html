@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - chess</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Play chess in GNU Emacs</p>
+<p>Latest: <a href="chess-2.0.4.tar">chess-2.0.4.tar</a>, 2015-Oct-30, 4.49MB</p>
+<p>Maintainer: Mario Lang &lt;mlang@delysid.org></p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/chess.html">http://elpa.gnu.org/packages/chess.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/?h=externals/chess">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=shortlog;h=refs/heads/externals/chess">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Welcome to Emacs Chess, a chess playing module for GNU Emacs.
+
+chess.el is an Emacs Lisp library and several clients on top of the
+underlying library functionality for performing various activities
+related to the game of chess.
+
+Type `M-x chess', and play chess against one of the default engine modules.
+
+Type `C-u M-x chess' to select a specific engine.
+You can play against various external chess computer programs, like
+crafty, fruit, glaurung, gnuchess, phalanx, sjeng and stockfish.
+There is also an Emacs based chess computer module (ai) which does not
+require any external programs.  However, the internal AI is not very strong.
+
+To play against another human on a different machine running GNU Emacs,
+type `C-u M-x chess RET network RET'.
+To play on one of the internet chess servers, type `M-x chess-ics'.
+
+If you'd like to view or edit Portable Game Notation (PGN) files,
+`chess-pgn-mode' provides a text-mode derived mode which can display the
+chess position at point.
+
+To improve your chessaility, `M-x chess-tutorial' provides a simple knight
+movement exercise to get you started, and `M-x chess-puzzle' can be used
+to solve puzzle collections in EPD or PGN format.
+
+There are some different types of chessboard display modules available.
+* A simple character based display (chess-plain).
+* A more verbose ASCII chessboard (chess-ics1).
+* A graphical chessboard display which uses images (chess-images).
+
+The variable `chess-default-display' controls which display modules
+are tried when a chessboard should be displayed.  By default, chess-images
+is tried first.  If Emacs is not running in a graphical environment,
+chess-ics1 is used instead.  To enable the chess-plain display module,
+customize `chess-default-display' accordingly.
+
+Once this is working, the next thing to do is to customize
+`chess-default-modules'.  This is a list of functionality modules used
+by chess.el to provide additional functionality.  You can enable or
+disable modules so that Emacs Chess better suites your tastes.
+Those modules in turn often have configuration variables, and
+appropriate documentation at the top of the related file.
+
+Emacs Chess is designed in a highly modular fashion, using loosely
+coupled modules that respond to events on the chess board.  This
+makes it very easy for programmers to add their own types of
+displays, opponents, analysis programs, etc.  See the documentation
+in chess-module.el to learn more.
+
+Most people will probably also be interested in reading the top
+of chess-display.el and chess-pgn.el, which describe the user
+interface commands available in each of those buffer types.
+</pre>
+<h2>News</h2><pre>
+This is the NEWS file for Emacs Chess, a chess client and analysis library
+written in Emacs Lisp.
+
+
+* Release 2.0.4:
+
+This is yet another bugfix release, no new features.
+
+** Fix a bug in PGN annotation parsing.
+
+** Fix missing dependencies in the ECO module.
+
+** Make the third argument of `chess-display-draw-square' optional, as expected
+   by the rest of the code.
+
+** Fix a bug where PGN mode could not load the `chess-file' module.
+
+
+* Release 2.0.3:
+
+This is a bugfix release which fixes a recursive dependency between
+`chess-display' and `chess-pgn' which was accidentally missed in 2.0.2.
+
+Also included is further proof-reading of the Info manual.
+
+
+* Release 2.0.2:
+
+** Major updates to the Info manual.
+
+** Algebraic move input:
+
+*** It is now possible to enter moves in numeric notation by
+    customizing `chess-input-notation-type'.
+
+*** Backspace (DEL) on terminals now deletes input as expected.
+
+*** If `chess-display-highlight-legal' is non-nil, target squares of
+    posssible moves are highlighted while you type.
+
+** The board and modeline is now correctly updated when making a move against
+   the internal engine (AI).
+
+** An error when editing positions with the `chess-plain' display has been fixed.
+
+** Legal move target highlights are now properly removed again once a move
+   has been selected, or the selected piece has been deselected.
+
+*** As a consequence of this fix, `chess-display-highlight-legal' is now
+    on by default.
+
+** `chess-ply-to-algebraic' can now generate figurine algebraic and
+   numeric notation.
+
+** `chess-algebraic-to-ply' can now handle figurine algebraic notation.
+
+** Several compiler warnings have been fixed.
+   
+** The `chess-autosave' module is disabled by default for now.
+
+** The incomplete and unused constant `chess-piece-name-table' has been removed.
+
+
+* Release 2.0.1:
+
+** chess-polyglot now works on 32-bit platforms.
+
+** Redo `chess-algebraic-regexp' with `rx' to improve readability.
+
+** Fix "invalid function" error in `chess-search-position'.
+   This was introduced by the recent conversion
+   of `chess--add-candidates' from a defsubst to a defmacro.
+
+
+* Release 2.0.0:
+
+Began keeping this file.  See doc/chess.info for information about Emacs
+Chess.
+
+
+Local variables:
+coding: utf-8
+mode: outline
+paragraph-separate: "[ 	]*$"
+end:
+
+</pre>
+</body>

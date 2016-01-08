@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - hydra</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Make bindings that stick around.</p>
+<p>Latest: <a href="hydra-0.13.3.tar">hydra-0.13.3.tar</a>, 2015-Oct-30,  140kB</p>
+<p>Maintainer: Oleh Krehel &lt;ohwoeowho@gmail.com></p>
+<p>Home page: <a href="https://github.com/abo-abo/hydra">https://github.com/abo-abo/hydra</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/hydra">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/hydra">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This package can be used to tie related commands into a family of
+short bindings with a common prefix - a Hydra.
+
+Once you summon the Hydra (through the prefixed binding), all the
+heads can be called in succession with only a short extension.
+The Hydra is vanquished once Hercules, any binding that isn't the
+Hydra's head, arrives.  Note that Hercules, besides vanquishing the
+Hydra, will still serve his orignal purpose, calling his proper
+command.  This makes the Hydra very seamless, it's like a minor
+mode that disables itself automagically.
+
+Here's an example Hydra, bound in the global map (you can use any
+keymap in place of `global-map'):
+
+    (defhydra hydra-zoom (global-map "&lt;f2>")
+      "zoom"
+      ("g" text-scale-increase "in")
+      ("l" text-scale-decrease "out"))
+
+It allows to start a command chain either like this:
+"&lt;f2> gg4ll5g", or "&lt;f2> lgllg".
+
+Here's another approach, when you just want a "callable keymap":
+
+    (defhydra hydra-toggle (:color blue)
+      "toggle"
+      ("a" abbrev-mode "abbrev")
+      ("d" toggle-debug-on-error "debug")
+      ("f" auto-fill-mode "fill")
+      ("t" toggle-truncate-lines "truncate")
+      ("w" whitespace-mode "whitespace")
+      ("q" nil "cancel"))
+
+This binds nothing so far, but if you follow up with:
+
+    (global-set-key (kbd "C-c C-v") 'hydra-toggle/body)
+
+you will have bound "C-c C-v a", "C-c C-v d" etc.
+
+Knowing that `defhydra' defines e.g. `hydra-toggle/body' command,
+you can nest Hydras if you wish, with `hydra-toggle/body' possibly
+becoming a blue head of another Hydra.
+
+Initially, Hydra shipped with a simplified `hydra-create' macro, to
+which you could hook up the examples from hydra-examples.el.  It's
+better to take the examples simply as templates and use `defhydra'
+instead of `hydra-create', since it's more flexible.
+</pre>
+</body>

@@ -1,0 +1,50 @@
+<rss version="2.0">
+  <channel>
+    <title>ELPA News</title>
+    <link>http://elpa.gnu.org/packages/</link>
+    <language>en</language>
+    <description>News for the Emacs Lisp Package Archive</description>
+<item>
+<title>markchars version 0.2.0</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>Mark suspicious characters, e.g. mixed scripts in a word.</description>
+<pubDate>Mon, 25 April 2011 20:10:00 -0500</pubDate>
+</item>
+<item>
+<title>epoch-view version 0.0.1</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>View Unix epoch timestamps as dates</description>
+<pubDate>Mon, 25 April 2011 20:10:00 -0500</pubDate>
+</item>
+<item>
+<title>load-dir version 0.0.2</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>Modularize your .emacs: autoload Lisp snippets</description>
+<pubDate>Sat, 26 March 2011 06:10:00 -0500</pubDate>
+</item>
+<item>
+<title>auctex.tar version 11.86</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>integrated environment for *TeX*</description>
+<pubDate>Wed, 20 October 2010 16:32:11 -0400</pubDate>
+</item>
+<item>
+<title>muse.tar version 3.20</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>Authoring and publishing tool</description>
+<pubDate>Thu, 26 August 2010 14:14:46 -0400</pubDate>
+</item>
+<item>
+<title>company.tar version 0.5</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>Flexible inline text and code completion</description>
+<pubDate>Wed, 25 August 2010 21:30:45 -0400</pubDate>
+</item>
+<item>
+<title>company.tar version 0.5</title>
+<link>http://elpa.gnu.org/packages/news.html</link>
+<description>Flexible inline text and code completion</description>
+<pubDate>Sat, 31 July 2010 20:57:40 -0400</pubDate>
+</item>
+  </channel>
+</rss>

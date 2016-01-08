@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - pinentry</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: GnuPG Pinentry server implementation</p>
+<p>Latest: <a href="pinentry-0.1.el">pinentry-0.1.el</a>, 2015-Oct-30, 16.0kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/pinentry.html">http://elpa.gnu.org/packages/pinentry.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/pinentry">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/pinentry">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This package allows GnuPG passphrase to be prompted through the
+minibuffer instead of graphical dialog.
+
+To use, add allow-emacs-pinentry to ~/.gnupg/gpg-agent.conf, and
+start the server with M-x pinentry-start.
+
+The actual communication path between the relevant components is
+as follows:
+
+  gpg --> gpg-agent --> pinentry --> Emacs
+
+where pinentry and Emacs communicate through a Unix domain socket
+created at:
+
+  ${TMPDIR-/tmp}/emacs$(id -u)/pinentry
+
+under the same directory which server.el uses.  The protocol is a
+subset of the Pinentry Assuan protocol described in (info
+"(pinentry) Protocol").
+
+NOTE: As of June 2015, this feature requires newer versions of
+GnuPG (2.1.5+) and Pinentry (not yet released, possibly 0.9.5+).
+For details, see the discussion on gnupg-devel mailing list:
+&lt;https://lists.gnupg.org/pipermail/gnupg-devel/2015-May/029875.html>.
+</pre>
+</body>

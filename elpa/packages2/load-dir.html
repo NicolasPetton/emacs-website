@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - load-dir</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Load all Emacs Lisp files in a given directory</p>
+<p>Latest: <a href="load-dir-0.0.3.el">load-dir-0.0.3.el</a>, 2015-Oct-30, 5.37kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/load-dir.html">http://elpa.gnu.org/packages/load-dir.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/load-dir">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/load-dir">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This package provides a way to load all Emacs Lisp snippets (they
+don't have to be libraries) in a directory on startup or when Emacs is
+already running.  It won't reload snippets unless the user requests
+it, so for instance adding a lambda to a hook is usually safe.
+
+You can specify ~/.emacs.d/load.d, a single directory, or a list of
+directories.  The file search can be recursive.  See the
+customizable variable `load-dirs' for details.
+
+The intent of ~/.emacs.d/load.d is to give package installers like
+el-get.el (see https://github.com/dimitri/el-get) and other tools a
+way to easily bootstrap themselves without necessarily modifying
+your .emacs or custom files directly.
+</pre>
+</body>

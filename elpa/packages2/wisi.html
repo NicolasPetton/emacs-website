@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - wisi</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Utilities for implementing an indentation/navigation engine using a generalized LALR parser</p>
+<p>Latest: <a href="wisi-1.1.1.tar">wisi-1.1.1.tar</a>, 2015-Oct-30,  100kB</p>
+<p>Maintainer: Stephen Leake &lt;stephen_leake@member.fsf.org></p>
+<p>Home page: <a href="http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html">http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/wisi">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/wisi">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Emacs wisi package 1.1.1
+
+The wisi package provides utilities for using generalized LALR parsers
+to do indentation and navigation. See ada-mode for an example of its
+use.
+
+It is provided as a Gnu ELPA package; to install the package, add to
+~./emacs:
+
+(package-initialize)
+
+then invoke M-x list-packages, install wisi.
+
+(end of file)
+
+</pre>
+<h2>News</h2><pre>
+GNU Emacs wisi NEWS -- history of user-visible changes.
+
+Copyright (C) 2014 Free Software Foundation, Inc.
+See the end of the file for license conditions.
+
+Please send wisi bug reports to bug-gnu-emacs@gnu.org, with
+'wisi' in the subject. If possible, use M-x report-emacs-bug.
+
+
+* wisi 1.1.1
+10 Apr 2015
+
+** rename wisi-font-lock-size-threshold to wisi-size-threshold, use
+   for more things in ada-mode
+
+* wisi 1.1.0
+18 Nov 2014
+
+** change wisi-forward-token to not return text; simpler, faster
+
+** remove face from wisi-cache; set font-lock-face property directly.
+
+** add support for numeric literal tokens.
+
+** change wisi-*-action to take a vector of arguments; faster for
+   external parser, catches more errors.
+
+** add wisi-font-lock-size-threshold
+
+* wisi 1.0.6
+28 Sep 2014
+
+** add face to wisi-cache
+
+** wisi-before/after-change : improve checks for invalidate-cache
+
+** wisi-motion-action takes class with each token-id
+
+** new parse actions: wisi-extend-action, wisi-face-action
+
+** new functions: wisi-goto-statement-start, -end.
+
+** fix misc bugs
+
+* wisi 1.0.5
+12 Jul 2014
+
+** wisi-parse-max-parallel-current - new variable for debugging slow parsing issues
+
+** wisi-set-end - new algorithm giving significant speedup
+
+* wisi 1.0.4
+19 Apr 2014
+
+** add support for GNAT Ada bracket hex character notation
+
+* wisi 1.0.3
+16 Mar 2014
+
+** fix another packaging bug; forgot to add files to ELPA git!
+
+* wisi 1.0.2
+14 Mar 2014
+
+** Emacs 24.2 supported, via cl-lib in Gnu ELPA
+
+* wisi 1.0.1
+
+** minor fixes for byte compiler warnings
+
+* wisi 1.0
+Feb 2 2014
+
+** first release in ELPA
+
+</pre>
+</body>

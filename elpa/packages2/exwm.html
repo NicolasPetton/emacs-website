@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - exwm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: </p>
+<p>This package has not been released yet.</p>
+<p>Maintainer: Chris Feng &lt;chris.w.feng@gmail.com></p>
+<p>Home page: <a href="https://github.com/ch11ng/exwm">https://github.com/ch11ng/exwm</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/?h=externals/exwm">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=shortlog;h=refs/heads/externals/exwm">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Overview
+--------
+EXWM (Emacs X Window Manager) is a full-featured tiling X window manager for
+Emacs built on top of XELB.  It features:
++ Fully keyboard-driven operation
++ Hybrid layout modes (tiling &amp; stacking)
++ Workspace support
++ ICCCM/EWMH compliance
++ Basic RandR support (optional)
+
+Installation &amp; configuration
+----------------------------
+Here are the minimal steps to get EXWM working:
+1. Install XELB and EXWM, and make sure they are in `load-path'.
+2. In '~/.emacs', add following lines (please modify accordingly):
+
+   (require 'exwm)
+   (require 'exwm-config)
+   (exwm-config-default)
+
+3. Link or copy the file 'xinitrc' to '~/.xinitrc'.
+4. Launch EXWM in a console (e.g. tty1) with
+
+   xinit -- vt01
+
+You should additionally hide the menu-bar, tool-bar, etc to increase the
+usable space.  Please check the wiki (https://github.com/ch11ng/exwm/wiki)
+for more detailed instructions on installation, configuration, usage, etc.
+
+References:
++ dwm (http://dwm.suckless.org/)
++ i3 wm (https://i3wm.org/)
++ Also see references within each required library.
+</pre>
+</body>

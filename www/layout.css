@@ -1,0 +1,717 @@
+/* Copyright (C) 2015 Free Software Foundation, Inc.
+ 
+Author: Nicolas Petton <nicolas@petton.fr>
+
+This file is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This file is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details. */
+
+/* Begin of reset */
+
+html, body, div, span, applet, object, iframe,
+                          h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+                          a, abbr, acronym, address, big, cite, code,
+                          del, dfn, em, img, ins, kbd, q, s, samp,
+                          small, strike, strong, sub, sup, tt, var,
+                          b, u, i, center,
+                          dl, dt, dd, ol, ul, li,
+                          fieldset, form, label, legend,
+                          table, caption, tbody, tfoot, thead, tr, th, td,
+                          article, aside, canvas, details, embed, 
+                          figure, figcaption, footer, header, hgroup, 
+                          menu, nav, output, ruby, section, summary,
+                          time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End of reset */
+
+body {
+  font-family: "fira sans", sans;
+  line-height: 1.5em;
+  font-size: 1.1em;
+  color: #4E4742;
+  color: #3F3B3B;
+  background: #F5F5ED;
+}
+
+html, body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
+  height: 100%;
+  margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 200px; /* .push must be the same height as .footer */
+}
+
+h1 {
+  font-size: 2.1em;
+  font-weight: bold;
+  margin: 0.4em;
+  line-height: 1.5em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2em;
+  margin: .8em 0px .4em;
+  font-weight: 500;
+  line-height: 2em;
+}
+
+a {
+  color: #76319F;
+  text-decoration: underline;
+  transition: .2s all ease-in;
+}
+
+a:hover {
+  color: #3E0C5C;
+}
+
+tt, code, kbd {
+  background-color: #333;
+  border: 1px solid #111;
+  padding: 0px 6px;
+  border-radius: 4px;
+  color: #ddd;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+p.centered {
+  text-align: center;
+  margin: 3em 0;
+}
+
+em {
+  font-weight: 500;
+}
+
+li {
+  list-style: square;
+  margin-bottom: 10px;
+  margin-left: 40px;
+}
+
+.container {
+  padding: 40px 0;
+  width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.header {
+  color: #3F3B3B;
+  text-align: left;
+  background: #EDE6D5 linear-gradient(#EDE6D5, #F5F5ED) repeat scroll 0% 0%;
+}
+
+.header .nav-mobile {
+  display: none;
+}
+
+.header nav {
+  background: #F2EFE4;
+  border-bottom: 1px solid #D4CBB6;
+  padding: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.header nav a {
+  color: #3F3D32;
+  padding: 10px;
+}
+
+.header nav a:hover {
+  color: #3F3D32;
+  text-decoration: underline;
+}
+
+.header .container {
+  padding-top: 40px;
+  padding-bottom: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.header .logo {
+  overflow: hidden;
+  z-index: 1;
+}
+
+.header .logo img {
+  max-height: 100px;
+  float: left;
+}
+
+.header .logo h1 {
+  float: left;
+  font-size: 4em;
+  line-height: 110px;
+  margin: 0 20px;
+  font-weight: 600;
+}
+
+.header h2 {
+  z-index: 1;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 2.6em;
+  line-height: 1.3em;
+  margin-top: 20px;
+  font-weight: 300;
+  max-width: 760px;
+}
+
+.header .teaser {
+  position: absolute;
+  left: 100px;
+  bottom: 0;
+  box-shadow: 0 0 10px 0 #666; 
+}
+
+.header p {
+  margin: 0;
+  max-width: 760px;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header a.learn-more {
+  color: rgb(240, 255, 135);
+  text-decoration: none;
+}
+
+.header a.learn-more:hover {
+  color: rgb(240, 255, 135);
+  text-decoration: none;
+}
+
+.header .links {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  font-weight: 400;
+}
+
+.header .links li {
+  list-style: none;
+  margin-left: 0;
+}
+
+.header .links span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.header .links a {
+  color: #C082E3;
+  font-weight: 400;
+  display: block;
+  transition: .2s all ease-in;
+}
+
+.header a.more {
+  font-size: .8em;
+  text-align: right;
+  color: #622486;
+  display: initial;
+  float: right;
+}
+
+.header .links a.more:hover {
+  text-decoration: underline;
+}
+
+.header .links a.btn {
+  margin: 10px 0;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #7F5AB6;
+  color: white;
+  text-align: center;
+}
+
+.header .links a.btn.gnu-linux {
+  margin-bottom: 40px;
+}
+
+.header .links a.btn:hover {
+  background: #622486;
+}
+
+.header .links a i {
+  margin-right: 10px;
+}
+
+.header .learn-more {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  text-align: center;
+  left: 500px;
+  margin-left: -70px;
+  font-weight: 400;
+  transition: .2s all ease;
+  padding: 10px;
+  background-color: #222;
+  opacity: 0.9;
+}
+
+.header .learn-more i {
+  display: block;
+  font-size: 40px;
+}
+
+.header .learn-more:hover {
+  text-decoration: none;
+  background-color: #111;
+  bottom: -10px;
+  opacity: 1;
+}
+
+.fsf-banner {
+  background: #b11107;
+  border-top: 4px solid #840902;
+  color: white;
+  overflow: hidden;
+  padding: 10px 0;
+}
+
+.fsf-banner img {
+  float: left;
+}
+
+.fsf-banner p {
+  font-size: .8em;
+  line-height: 1.3em;
+  float: left;
+  margin: 0;
+  margin-left: 40px;
+  width: 560px;
+  font-style: italic;
+}
+
+.fsf-banner .container {
+  padding: 20px;
+}
+
+.videos {
+  background: #624195;
+  color: #fafafa;
+  text-align: center;
+}
+
+.videos h2 {
+  color: #EEE2FF;
+}
+
+.videos video {
+  display: inline-block;
+  padding: 20px;
+}
+
+.features {
+  border-top: 1px solid #444242;
+  background: #7F5AB6;
+  color: #fafafa;
+  overflow: hidden;
+}
+
+.features .container {
+  padding-top: 20px;
+}
+
+.features a, .videos a {
+  color: #FFDE8F;
+  text-decoration: none;
+}
+
+.features a:hover, .videos a:hover {
+  text-decoration: underline;
+}
+
+.features h2 {
+  text-align: center;
+  color: #EEE2FF;
+}
+
+.features ul {
+  overflow: auto;
+}
+
+.features li {
+  text-align: center;
+  list-style: outside none none;
+  width: 27%;
+  margin: 30px 3%;
+  float: left;
+  padding-left: 0px;
+  padding-top: 210px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.features .modes {
+  background-image: url('images/emacs-preview-modes.png');
+}
+
+.features .documentation {
+  background-image: url('images/emacs-preview-documentation.png');
+}
+
+.features .unicode {
+  background-image: url('images/emacs-preview-unicode.png');
+}
+
+.features .customization {
+  background-image: url('images/emacs-preview-customization.png');
+}
+
+.features .extensions {
+  background-image: url('images/emacs-preview-extensions.png');
+}
+
+.features .packages {
+  background-image: url('images/emacs-preview-packages.png');
+}
+
+.releases {
+  color: #3F3B3B;
+  background: #F0EBDE;
+  /* border-top: 1px solid #e5e5c8; */
+}
+
+.releases code,
+.releases pre,
+.releases tt,
+.release kbd {
+  color: #333;
+  background: #e5e5c8;
+  border-color: #666;
+}
+
+.footer {
+  border-top: 4px solid #333;
+  padding-top: 15px;
+  text-align:center;
+  
+  background: #434342; /* url(images/emacs-bw.png) bottom left no-repeat; */
+  color: #888;
+}
+
+.footer h3 {
+  font-size: 1.3em;
+}
+
+.footer .container {
+  padding: 5px;
+  font-size: 0.8em;
+  overflow: hidden;
+  /* background: #262626 url(images/emacs-bw.png) left 70px no-repeat; */
+}
+
+.footer .container > div {
+  width: 430px;
+  float: left;
+}
+
+.footer .container > div:last-child {
+  margin-left: 100px;
+}
+
+.footer .left {
+  text-align: left;
+}
+
+.footer .right {
+  text-align: right;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer nav {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.footer nav a {
+  margin: 10px;
+}
+
+.footer nav a:after {
+  content: " ❯";
+  color: #555;
+}
+
+.footer nav a:hover {
+  text-decoration: none;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: rgb(204, 99, 99);
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    width: 800px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 40px 5%;
+  }
+  
+  .header .container {
+    padding-bottom: 0;
+  }
+
+  .header h2,
+  .header p {
+    max-width: 100%;
+  }
+
+  .header .links {
+    position: relative;
+  }
+
+  .header .links li {
+    float: left;
+    width: 29%;
+    padding: 10px;
+  }
+
+  .header .links .btns {
+    overflow: hidden;
+  }
+  
+  .header .links a.btn {
+    text-align: center;
+    margin: 10px 5% 10px 0;
+  }
+  
+  .header .links a.btn:last-child {
+    margin-right: 0;
+  }
+
+  .header .links a.more {
+    font-size: 1em;
+    text-align: left;
+  }
+
+  .header a.learn-more {
+    display: none;
+  }
+  
+  .header .teaser {
+    left: 0;
+    margin-top: 80px;
+    position: relative;
+    max-width: 100%;
+  }
+  
+  .fsf-banner a {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .fsf-banner img {
+    float: none;
+  }
+
+  .fsf-banner p {
+    text-align: center;
+    width: auto;
+    margin-bottom: 10px; 
+  }
+  
+  .wrapper {
+    margin: 0 auto -300px;
+  }
+  .footer, .push {
+    height: 300px;
+  }
+  
+  .footer .container > .left,
+  .footer .container > .right {
+    float: none;
+    text-align: center;
+    width: auto;
+  }
+
+  .footer .container > div:last-child {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .features ul li {
+    width: auto;
+    margin: 20px 5%;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  body {
+    font-size: 1em;
+  }
+
+  .header .container {
+    text-align: center;
+    padding-top: 0;
+  }
+  
+  .header .logo {
+    text-align: center;
+  }
+
+  .header .logo h1,
+  .header .logo img {
+    float: none;
+  }
+
+  .header .logo h1 {
+    display: block;
+    font-size: 3em;
+    line-height: 2em;
+    margin-left: 5px;
+  }
+
+  .header h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+  }
+
+  .header .nav-mobile {
+    display: block;
+    overflow: hidden;
+    color: #ddd;
+  }
+
+  .header .nav-mobile .nav-toggle {
+    border: 0 none;
+    border-radius: 4px;
+    background: transparent;
+    margin: 5px;
+    float: right;
+    width: 45px;
+    height: 45px;
+  }
+
+  .header .nav-mobile .nav-toggle .bar {
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 1px;
+    background: #9142BE;
+    margin: 5px 0;
+  }
+
+  .header .nav-mobile .nav-toggle:hover .bar {
+    background: #622486;
+  }
+
+  .header nav {
+    display: none;
+    padding: 0;
+  }
+
+  .header nav a {
+    padding: 10px;
+    display: block;
+    text-align: left;
+    border-top: 1px solid #666;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  .fsf-banner img {
+    max-width: 100%;
+  }
+
+  .fsf-banner p {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    margin: 0 auto -320px;
+  }
+  .footer, .push {
+    height: 320px;
+  }
+
+  .header .links li {
+    float: none;
+    width: auto;
+    padding: 5px;
+  }
+  
+  .header .links a.btn,
+  .header .links a.btn:last-child {
+    text-align: center;
+    margin: 0;
+    width: auto;
+  }
+}

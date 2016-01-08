@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Gnu Emacs Logo
+
+   Copyright (C) 2008-2015 Free Software Foundation, Inc.
+
+   Author: Nicolas Petton <nicolas@petton.fr>
+
+   This file is part of GNU Emacs.
+
+   GNU Emacs is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 3 of the License, or
+   (at your option) any later version.
+
+   GNU Emacs is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with GNU Emacs.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="333"
+   height="233"
+   id="svg6706"
+   style="display:inline"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="splash.svg"
+   inkscape:export-filename="/opt/src/emacs/etc/images/splash.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="1"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1016"
+     id="namedview3107"
+     showgrid="false"
+     inkscape:showpageshadow="false"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="100.3633"
+     inkscape:cy="127.84642"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <metadata
+     id="metadata2314">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+        <dc:date>2008/06/28</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Francesc Rocher</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>GPL</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:description>GNU Emacs splash image</dc:description>
+        <dc:contributor>
+          <cc:Agent>
+            <dc:title>Based on the original work by Luis Fernandes.</dc:title>
+          </cc:Agent>
+        </dc:contributor>
+        <cc:license
+           rdf:resource="http://www.gnu.org/copyleft/gpl.html" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6709">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4350"
+       x="-0.044626798"
+       width="1.0892535"
+       y="-0.044175494"
+       height="1.088351">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="8.7848425"
+         id="feGaussianBlur4352" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4284"
+       id="linearGradient4245"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.16107759,0,0,0.15265785,163.31978,89.565271)"
+       spreadMethod="pad"
+       x1="-122.20192"
+       y1="-161.8512"
+       x2="236.61363"
+       y2="300.73987" />
+    <linearGradient
+       id="linearGradient4284">
+      <stop
+         id="stop4286"
+         style="stop-color:#8381c5;stop-opacity:1"
+         offset="0" />
+      <stop
+         offset="0.56639391"
+         style="stop-color:#7e55b3;stop-opacity:0.99607843"
+         id="stop4290" />
+      <stop
+         id="stop4288"
+         style="stop-color:#a52ecb;stop-opacity:0.99215686"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4292"
+       id="linearGradient4247"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.18190518,0,0,0.18190518,118.53272,43.896554)"
+       x1="447.80933"
+       y1="396.6066"
+       x2="173.94518"
+       y2="66.018341" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4292">
+      <stop
+         style="stop-color:#411f5d;stop-opacity:1"
+         offset="0"
+         id="stop4294" />
+      <stop
+         style="stop-color:#5b2a85;stop-opacity:1"
+         offset="1"
+         id="stop4296" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4292"
+       id="linearGradient5550"
+       x1="61.29594"
+       y1="141.72"
+       x2="262.70407"
+       y2="141.72"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(3,26)" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="emacs"
+     style="display:inline">
+    <path
+       transform="matrix(0.18190518,0,0,0.18190518,118.53272,43.896554)"
+       d="m 491.66937,257.75916 c 0,131.79436 -105.76,238.63481 -236.22155,238.63481 -130.46155,0 -236.221539,-106.84045 -236.221539,-238.63481 0,-131.79437 105.759989,-238.634808 236.221539,-238.634808 130.46155,0 236.22155,106.840438 236.22155,238.634808 z"
+       id="path4233"
+       style="opacity:0.40500004;fill:#211f46;fill-opacity:0.99607843;stroke:#0a0b1b;stroke-width:8.53333378;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4350)"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="opacity:1;fill:url(#linearGradient4245);fill-opacity:1;stroke:url(#linearGradient4247);stroke-width:2.4586134;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4235"
+       d="m 207.96991,90.784281 c 0,23.974079 -19.23828,43.408899 -42.96991,43.408899 -23.73161,0 -42.96994,-19.43482 -42.96994,-43.408899 0,-23.974079 19.23833,-43.408908 42.96994,-43.408908 23.73163,0 42.96991,19.434829 42.96991,43.408908 z" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4237"
+       d="m 150.23105,121.27528 c 0,0 3.63837,0.25739 8.319,-0.15513 1.89553,-0.16713 9.09235,-0.87397 14.47295,-2.05397 0,0 6.56025,-1.40397 10.06992,-2.69734 3.67229,-1.35332 5.67064,-2.50192 6.5701,-4.12943 -0.0393,-0.33346 0.27694,-1.516 -1.41657,-2.2263 -4.32964,-1.81602 -9.35102,-1.48753 -19.28706,-1.69821 -11.01868,-0.37859 -14.68417,-2.22294 -16.63674,-3.70839 -1.87239,-1.50694 -0.93087,-5.67598 7.09193,-9.34825 4.0413,-1.95556 19.88368,-5.564342 19.88368,-5.564342 -5.33544,-2.637254 -15.28432,-7.273443 -17.32942,-8.274581 -1.79367,-0.878056 -4.66409,-2.200153 -5.28629,-3.799718 -0.70544,-1.535624 1.66602,-2.858429 2.9907,-3.237253 4.26627,-1.230571 10.28893,-1.995434 15.77026,-2.081297 2.7552,-0.04306 3.20241,-0.220428 3.20241,-0.220428 3.80166,-0.630613 6.30431,-3.23161 5.26161,-7.350812 -0.93608,-4.204652 -5.87303,-6.675233 -10.56461,-5.819946 -4.41804,0.805445 -15.06666,3.898577 -15.06666,3.898577 13.1625,-0.113842 15.36554,0.10578 16.34945,1.481397 0.58105,0.812425 -0.26403,1.926383 -3.77443,2.4997 -3.82168,0.624164 -11.76594,1.375833 -11.76594,1.375833 -7.62108,0.452595 -12.98934,0.482894 -14.59942,3.891755 -1.05189,2.22707 1.1217,4.195941 2.07439,5.428381 4.02589,4.477164 9.84102,6.891827 13.58411,8.670019 1.40837,0.669031 5.54067,1.932517 5.54067,1.932517 -12.14327,-0.667891 -20.90299,3.060867 -26.04136,7.354036 -5.81167,5.375512 -3.24077,11.782972 8.66575,15.728222 7.03247,2.33022 10.52014,3.42611 21.01013,2.4815 6.17871,-0.33304 7.15272,-0.13488 7.21432,0.37213 0.0867,0.71381 -6.86277,2.4869 -8.76005,3.03417 -4.82671,1.39225 -17.4795,4.20351 -17.54283,4.21716 z" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:url(#linearGradient5550);fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="62.09594"
+       y="181.5"
+       id="text5535"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5537"
+         x="62.09594"
+         y="181.5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:url(#linearGradient5550);fill-opacity:1;stroke:none;stroke-opacity:1">GNU Emacs</tspan></text>
+  </g>
+</svg>

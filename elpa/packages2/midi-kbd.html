@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - midi-kbd</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Create keyboard events from Midi input</p>
+<p>Latest: <a href="midi-kbd-0.2.el">midi-kbd-0.2.el</a>, 2015-Oct-30, 10.0kB</p>
+<p>Maintainer: David Kastrup &lt;dak@gnu.org></p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/midi-kbd.html">http://elpa.gnu.org/packages/midi-kbd.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/midi-kbd">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/midi-kbd">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Entry point of this package is M-x midikbd-open RET
+
+It opens a raw ALSA midi device (see its documentation for how to
+deal with non-raw devices) and feeds MIDI note-on and note-off
+events into the Emacs input queue associated with the terminal from
+which midikbd-open has been called.  Macro recording and replay is
+possible.  The interpretation of such events is left to
+applications establishing appropriate key bindings.
+
+Since macro recording and replay makes it very desirable to have
+every generated event be interpretable standalone rather than split
+into several Emacs events, every MIDI event is encoded into one
+mouse-like event similar to &lt;Ch1 C_4>.  Consequently, the following
+functions are applicable to such events:
+
+(event-start EVENT) returns the down event part
+(event-end EVENT) returns the up event part
+
+The up event is only available with bindings of &lt;Ch1 up-C-4> and
+similar, whereas the down event is available for all bindings.
+
+up/down event parts may be further split with
+
+(posn-area EV) returns a channel symbol Ch1..Ch16
+
+(posn-x-y EV) returns numeric values 0..127 for pitch and velocity
+
+(posn-timestamp EV) returns a millisecond time value that will wrap
+around when reaching most-positive-fixnum, about every 12 days on a
+32bit system.
+
+Note events (omitting the channel modifier) are
+&lt;C_-1> &lt;Csharp_-1> ... &lt;G_9>
+
+Since Midi does not encode enharmonics, there are no *flat_* key
+names: it is the job of the key bindings to give a higher level
+interpretation to the basic pitch.
+</pre>
+</body>

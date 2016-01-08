@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - xpm</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: edit XPM images</p>
+<p>Latest: <a href="xpm-1.0.3.tar">xpm-1.0.3.tar</a>, 2015-Oct-30, 40.0kB</p>
+<p>Maintainer: Thien-Thi Nguyen &lt;ttn@gnu.org></p>
+<p>Home page: <a href="http://www.gnuvola.org/software/xpm/">http://www.gnuvola.org/software/xpm/</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/xpm">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/xpm">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This package makes editing XPM images easy (and maybe fun).
+Editing is done directly on the (textual) image format,
+for maximal cohesion w/ the Emacs Way.
+
+Coordinates have the form (X . Y), with X from 0 to (width-1),
+and Y from 0 to (height-1), inclusive, in the 4th quadrant;
+i.e., X grows left to right, Y top to bottom, origin top-left.
+
+  (0,0)        … (width-1,0)
+    ⋮                    ⋮
+  (0,height-1) … (width-1,height-1)
+
+In xpm.el (et al), "px" stands for "pixel", a non-empty string
+in the external representation of the image.  The px length is
+the image's "cpp" (characters per pixel).  The "palette" is a
+set of associations between a px and its "color", which is an
+alist with symbolic TYPE and and string CVALUE.  TYPE is one of:
+
+  c  -- color (most common)
+  s  -- symbolic
+  g  -- grayscale
+  g4 -- four-level grayscale
+  m  -- monochrome
+
+and CVALUE is a string, e.g., "blue" or "#0000FF".  Two images
+are "congruent" if their width, height and cpp are identical.
+
+This package was originally conceived for non-interactive use,
+so its design is spartan at the core.  However, we plan to add
+a XPM mode in a future release; monitor the homepage for updates.
+
+For now, the features (w/ correspondingly-named files) are:
+- xpm          -- edit XPM images
+- xpm-m2z      -- ellipse/circle w/ fractional center
+
+Some things are autoloaded.  Which ones?  Use the source, Luke!
+(Alternatively, just ask on help-gnu-emacs (at gnu dot org).)
+</pre>
+<h2>News</h2><pre>
+NEWS for xpm.el (et al)
+See the end for copying conditions.
+
+
+- 1.0.3 | 2014-06-13
+  - improved docstrings
+
+- 1.0.2 | 2014-05-30
+  - new homepage: http://www.gnuvola.org/software/xpm/
+
+- 1.0.1 | 2014-05-21
+  - byte-compilation bugfix
+
+- 1.0.0 | 2014-05-18
+  - initial release
+
+
+  Local Variables:
+  mode: outline
+  outline-regexp: "\\([ ][ ]\\)*- "
+  End:
+
+_____________________________________________________________________
+Copyright (C) 2014  Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted provided the copyright notice and this notice are preserved.
+
+</pre>
+</body>

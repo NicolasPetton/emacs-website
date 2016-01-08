@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - lex</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Lexical analyser construction</p>
+<p>Latest: <a href="lex-1.1.tar">lex-1.1.tar</a>, 2015-Oct-30, 70.0kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/lex.html">http://elpa.gnu.org/packages/lex.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/lex">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/lex">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Format of regexps is the same as used for `rx' and `sregex'.
+Additions:
+- (ere RE) specify regexps using the ERE syntax.
+- (inter REs...) (aka `&amp;') make a regexp that only matches
+  if all its branches match.  E.g. (inter (ere ".*a.*") (ere ".*b.*"))
+  match any string that contain both an "a" and a "b", in any order.
+- (case-fold REs...) and (case-sensitive REs...) make a regexp that
+  is case sensitive or not, regardless of case-fold-search.
+
+Input format of lexers:
+
+ALIST of the form ((RE . VAL) ...)
+
+Format of compiled DFA lexers:
+
+nil                     ; The trivial lexer that fails
+(CHAR . LEXER)
+(table . CHAR-TABLE)
+(stop VAL . LEXER)      ; Match the empty string at point or LEXER.
+(check (PREDICATE . ARG) SUCCESS-LEXER . FAILURE-LEXER)
+
+Intermediate NFA nodes may additionally look like:
+(or LEXERs...)
+(orelse LEXERs...)
+(and LEXERs...)
+(join CONT . EXIT)
+Note: we call those things "NFA"s but they're not really NFAs.
+</pre>
+</body>

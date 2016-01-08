@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>GNU ELPA - ace-window</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+            <div class="header small">
+                <div class="container">
+                    <h1> GNU ELPA - ace-window</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <p>Description: Quickly switch windows.</p>
+                <p>Latest: <a href="http://elpa.gnu.org/packages/ace-window-0.9.0.el">ace-window-0.9.0.el</a>, 2015-Jun-05, 18.7kB</p>
+                <p>Maintainer: Oleh Krehel &lt;ohwoeowho@gmail.com&gt;</p>
+                <p>Home page: <a href="https://github.com/abo-abo/ace-window">https://github.com/abo-abo/ace-window</a></p>
+                <p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/ace-window">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/ace-window">Gitweb</a></p>
+                <h2>Full description</h2><pre>The main function, `ace-window' is meant to replace `other-window'.
+In fact, when there are only two windows present, `other-window' is
+called.  If there are more, each window will have its first
+character highlighted.  Pressing that character will switch to that
+window.
+
+To setup this package, just add to your .emacs:
+
+   (global-set-key (kbd "M-p") 'ace-window)
+
+replacing "M-p"  with an appropriate shortcut.
+
+Depending on your window usage patterns, you might want to set
+
+   (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
+
+This way they are all on the home row, although the intuitive
+ordering is lost.
+
+If you don't want the gray background that makes the red selection
+characters stand out more, set this:
+
+   (setq aw-background nil)
+
+If you want to know the selection characters ahead of time, you can
+turn on `ace-window-display-mode'.
+
+When prefixed with one `universal-argument', instead of switching
+to selected window, the selected window is swapped with current one.
+
+When prefixed with two `universal-argument', the selected window is
+deleted instead.
+                </pre>
+                <h2>Old versions</h2>
+                <table>
+                    <tbody><tr><td><a href="http://elpa.gnu.org/packages/ace-window-0.8.1.el">ace-window-0.8.1.el</a></td><td>2015-May-09</td><td>15.5kB</td>
+                    </tr><tr><td><a href="http://elpa.gnu.org/packages/ace-window-0.8.0.tar">ace-window-0.8.0.tar</a></td><td>2015-Mar-22</td><td>40.0kB</td>
+                    </tr></tbody></table>
+            </div>
+            <div class="push"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <p>
+                    Copyright 2015 Free Software Foundation, Inc.
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>

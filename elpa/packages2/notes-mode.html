@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - notes-mode</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Indexing system for on-line note-taking</p>
+<p>Latest: <a href="notes-mode-1.30.tar">notes-mode-1.30.tar</a>, 2015-Oct-30,  660kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/notes-mode.html">http://elpa.gnu.org/packages/notes-mode.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/notes-mode">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/notes-mode">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Notes-mode
+----------
+by John Heidemann, &lt;johnh@isi.edu>
+
+For documentation, see
+	notes-mode.info
+	HTML/notes-mode.html
+or	&lt;http://www.isi.edu/~johnh/SOFTWARE/NOTES_MODE/>
+
+
+WHAT IS NOTES-MODE?
+-------------------
+
+(From the info documentation)
+
+Notes-mode is an indexing system for on-line note-taking.
+Notes-mode is composed of two parts, the visible part, a major-mode for
+emacs to aid note-taking; and the invisible part, scripts which
+periodically index your notes for you.
+
+For more sales, including
+	Why keep notes?
+	Why keep notes on-line?
+	Why keep notes with notes-mode?
+see &lt;http://www.isi.edu/~johnh/SOFTWARE/NOTES_MODE/notes-mode_1.html>
+
+
+REQUIREMENTS
+------------
+
+Notes-mode requires Perl-5.  For information: http://www.perl.com
+
+
+INSTALLATION
+------------
+
+For each user:
+	1. Run notesinit
+		(from where it's installed, /usr/local/bin/notesinit
+		by default)
+
+After you've installed notes mode you're encouraged to subscribe
+to the mailing lists:
+Send the message "subscribe" to
+	notes-mode-announce-request@heidemann.la.ca.us and 
+	notes-mode-talk-request@heidemann.la.ca.us.
+(Or use majordomo@heidemann.la.ca.us.)
+
+
+COPYRIGHT
+---------
+
+Notes-mode is Copyright (C) 1994-2002,2012  Free Software Foundation, Inc.
+Notes-mode comes with ABSOLUTELY NO WARRANTY.
+This is Free Software, and you are welcome to redistribute it under certain
+conditions.  See the file ``COPYING'' for details about both of
+these conditions.
+
+
+TODO
+----
+
+- figure out how to pass the configured file names to the Perl scripts.
+- Use `completion-at-point-functions'.
+- Use epa/epg for encryption.
+- Figure out what to do about mkall.
+- Use defcustom and get rid of "* in docstrings.
+- Remove notes-use-font-lock.
+- Don't run notes-first just because we load the .el files.
+- Unify notes-utility-dir and notes-bin-dir.
+- Add support for mouse-1-click-follows-link.
+
+
+</pre>
+</body>

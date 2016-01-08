@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - osc</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Open Sound Control protocol library</p>
+<p>Latest: <a href="osc-0.1.el">osc-0.1.el</a>, 2015-Oct-30, 8.00kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/osc.html">http://elpa.gnu.org/packages/osc.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/osc">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/osc">Gitweb</a></p>
+<h2>Full description</h2><pre>
+OpenSound Control ("OSC") is a protocol for communication among
+computers, sound synthesizers, and other multimedia devices that is
+optimized for modern networking technology and has been used in many
+application areas.
+
+This package implements low-level functionality for OSC clients and servers.
+In particular:
+* `osc-make-client' and `osc-make-server' can be used to create process objects.
+* `osc-send-message' encodes and sends OSC messages from a client process.
+* `osc-server-set-handler' can be used to change handlers for particular
+  OSC paths on a server process object on the fly.
+
+BUGS/TODO:
+
+* Timetags and binary blobs are not supported yet.
+
+Usage:
+
+Client: (setq my-client (osc-make-client "localhost" 7770))
+        (osc-send-message my-client "/osc/path" 1.5 1.0 5 "done")
+        (delete-process my-client)
+
+Server: (setq my-server (osc-make-server "localhost" 7770
+         (lambda (path &amp;rest args)
+           (message "OSC %s: %S" path args))))
+</pre>
+</body>

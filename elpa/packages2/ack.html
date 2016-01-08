@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - ack</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: interface to ack-like tools</p>
+<p>Latest: <a href="ack-1.5.tar">ack-1.5.tar</a>, 2015-Oct-30, 30.0kB</p>
+<p>Home page: <a href="https://github.com/leoliu/ack-el">https://github.com/leoliu/ack-el</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/ack">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/ack">Gitweb</a></p>
+<h2>Full description</h2><pre>
+==============================================================
+ Emacs Interface to `Ack &lt;http://beyondgrep.com>`_-like Tools
+==============================================================
+ 
+This package brings the full power of `ack &lt;http://beyondgrep.com>`_
+to `emacs &lt;http://www.gnu.org/software/emacs>`_ by allowing you to run
+it seamlessly with its large set of options. Ack-like tools such as
+`the silver searcher &lt;https://github.com/ggreer/the_silver_searcher>`_
+and ``git/hg/bzr grep`` are well supported too.
+
+It is part of `GNU ELPA &lt;http://elpa.gnu.org>`_ - the official package
+archive for `emacs &lt;http://www.gnu.org/software/emacs>`_. Patches,
+feature requests and bug reports are welcome.
+
+Features
+--------
+
+- Keep all features of `ack &lt;http://beyondgrep.com>`_ and more
+- Handle colors using the standard library ``ansi-color.el``
+- Completion for ack options while reading from the minibuffer
+- Support `the silver search (ag)
+  &lt;https://github.com/ggreer/the_silver_searcher>`_
+- Support ``git grep``, ``hg grep`` and ``bzr grep``
+
+Install
+-------
+
+``M-x package-install RET ack RET``
+
+Screenshots
+-----------
+
+* ack
+
+.. figure:: http://i.imgur.com/VwWyzAe.png
+   :target: http://i.imgur.com/VwWyzAe.png
+   :alt: ack.png
+
+* git grep
+
+.. figure:: http://i.imgur.com/rwjC4pa.png
+   :target: http://i.imgur.com/rwjC4pa.png
+   :alt: ack-git-grep.png
+
+Usage
+-----
+
+- Type ``M-x ack`` and provide a pattern to search.
+- Type ``C-u M-x ack`` to search from current project root.
+- Type ``C-u C-u M-x ack`` to interactively choose a directory to search.
+
+While reading ack command and args from the minibuffer, the following
+key bindings may be useful:
+
+- ``M-I`` => insert a template for case-insensitive file name search
+- ``M-G`` => insert a template for ``git grep``, ``hg grep`` or ``bzr grep``
+- ``M-Y`` => grab the symbol at point from the window before entering
+  the minibuffer
+- ``TAB`` => completion for ack options
+
+Emacs23
+-------
+
+Check out the `emacs23
+&lt;https://github.com/leoliu/ack-el/tree/emacs23>`_ branch.
+
+Bugs
+----
+
+https://github.com/leoliu/ack-el/issues
+
+Contributors
+------------
+Phillip Lord
+
+</pre>
+</body>

@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - ada-mode</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: major-mode for editing Ada sources</p>
+<p>Latest: <a href="ada-mode-5.1.8.tar">ada-mode-5.1.8.tar</a>, 2015-Oct-30, 1.14MB</p>
+<p>Maintainer: Stephen Leake &lt;stephen_leake@member.fsf.org></p>
+<p>Home page: <a href="http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html">http://stephe-leake.org/emacs/ada-mode/emacs-ada-mode.html</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/ada-mode">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/ada-mode">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Emacs Ada mode version 5.1.8
+
+Ada mode requires Emacs 24.2 or greater
+
+See ada-mode.texi (or a compiled version) for help on using and
+customizing Ada mode, upgrading from previous versions, and notes for
+Ada mode developers.
+
+Ada mode is provided as a Gnu ELPA package; to install the package,
+add to ~./emacs:
+
+(package-initialize)
+
+then invoke M-x list-packages, install Ada mode.
+
+Note that you must have the Emacs lisp sources installed; that's a
+separate package in some distributions.
+
+To install Ada mode, gpr mode, and associated utilities from this distribution:
+
+Unzip to a convenient place (we will use ~/ada-mode in the following).
+
+In a shell:
+$ cd ~/ada-mode/build/wisi
+$ byte-compile
+
+Edit your ~/.emacs, add:
+
+(add-to-list 'load-path (expand-file-name "~/ada-mode"))
+
+
+Ada mode will be automatically loaded when you open a file with a
+matching extension (default *.ads, *.adb).
+
+
+By default ada-mode uses gnat find for cross-reference functions.
+There is support for an alternative: gpr_query. See ada-mode.texi
+section Installation for more.
+
+(end of file)
+
+</pre>
+<h2>News</h2><pre>
+GNU Emacs Ada mode NEWS -- history of user-visible changes.
+
+Copyright (C) 2014 Free Software Foundation, Inc.
+See the end of the file for license conditions.
+
+Please send Emacs Ada mode bug reports to bug-gnu-emacs@gnu.org, with
+'ada-mode' in the subject. If possible, use M-x report-emacs-bug.
+
+
+* Ada mode 5.1.8
+10 Apr 2015
+
+** requires OpenToken 6.0
+
+** ada-align handle identifiers that start with Ada keywords
+
+** functions for ada-case-identifier now take three args: start, end,
+   force-case
+
+** parsing is not required by find-other-file if the current buffer is
+   larger than wisi-size-threshold
+
+** fix misc bugs
+
+* Ada mode 5.1.7
+18 Nov 2014
+
+** add ada-find-file that prompts for a file from the current project,
+   with completion.
+
+** fix bug that prevented
+    Y : Boolean := Boolean'(if True then False);
+
+** add ada-create-select-default-prj, to simplify working with small
+   projects
+
+** Handle deleting whitespace between words, inserting whitespace in
+   the middle of a word properly.
+
+** Change ada-case-adjust to capitalize words in comments and strings
+   by default; C-u adjusts case as if code.
+
+** allow 'raise' in expressions for GNAT GPL 2014 aspects
+
+** move all except keyword face highighting to grammar; much more
+   accurate, easier to maintain, simpler, faster.
+
+** delete gnatinspect support; gpr_query is better
+
+** misc bug fixes
+
+* Ada mode 5.1.6
+28 Sep 2014
+
+** improve syntax highlighting of names after 'of', 'new', 'renames'
+
+** fix ada-format-paramlist to handle 'aliased' keyword (new in Ada
+   2012), and 'not null' without 'access'.
+
+** fix ada-find-other-file in separate bodies; now navigates to the
+   spec.
+
+** restore ada-indent-newline-indent for [return]
+
+* Ada mode 5.1.5
+12 Jul 2014
+
+** add C-c &lt;, C-c >; goto-declaration-start, -end
+
+** improve parsing speed significantly
+
+* Ada mode 5.1.4
+26 May 2014
+
+** support expression functions
+
+** beginning-of-defun-function, end-of-defun-function are now set. A
+   "defun" is a generic, package, protected, subprogram, or task spec
+   or body.
+
+** C-c C-s is now bound to ada-goto-previous-pos, which goes to the
+   first position in ada-goto-pos-ring. Most navigation functions set
+   ada-goto-pos-ring. This allows easy navigation back to the start of
+   a cross-reference chain.
+
+** xref tool error handlers no longer show the xref tool buffer; the
+   new Ada menu item 'show xref tool buffer' can be used instead.
+
+** The parser supports more deeply nested case statements.
+
+* Ada mode 5.1.3
+19 Apr 2014
+
+** more GNAT error message auto-fixes
+
+** support aspects on subprogram declarations; format same as SPARK examples.
+
+** fix bug in ada-syntax-propertize that caused query-replace to screw up
+
+** inhibit reparse due to case adjust; case adjust entire buffer is
+   now _much_ faster.
+
+** Non-ASCII characters supported in Ada mode buffers, including GNAT
+   bracket notation.
+
+* Ada mode 5.1.2
+16 Mar 2014
+
+** fix another packaging bug; forgot to add files to ELPA git!
+
+* Ada mode 5.1.1
+14 Mar 2014
+
+** require wisi-1.0.2, to fix packaging bug
+
+** gnat-find now called with -a to include read-only .ali files in the results.
+
+* Ada mode 5.1.0
+13 Mar 2014
+
+** Emacs 24.2 supported, via cl-lib in Gnu ELPA
+
+** Better handling of aspects.
+
+** 'record' is aligned with 'type' in derived types
+
+** Several minor indentation bugs have been fixed.
+
+** Added "2.2 Upgrading from previous versions" to the user guide.
+
+** ada-align now properly handles subprograms with the opening paren
+   on the same line as the preceding code and code on the same line as
+   the closing paren:
+
+    function Foo (Param_1 : Integer;
+                  Param_2 : Integer) return Integer;
+
+** When no project file is selected, the default variables are
+   consistently used instead. Previously, the default variables were
+   only used when parsing a project file.
+
+** info files are properly visible in main info menu
+
+** 'C-c ;' used to run `comment-dim', which is bound to 'M-;' in the
+   global keymap. 'C-c ;' now gives an error with a message saying
+   'use M-; instead'.
+
+* Ada mode 5.0.1
+Feb 2 2014
+
+First public release, via ELPA
+
+* Ada mode 5.0.0
+Dec 24 2013
+
+** first release in ELPA
+
+** Previous version was 4.00, in Emacs core. 5.0.1 is a complete
+   rewrite, using a generalized LALR parser that caches syntactic
+   information in text properties.
+
+</pre>
+</body>

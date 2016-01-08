@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - svg</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: svg image creation functions</p>
+<p>Latest: <a href="svg-0.1.el">svg-0.1.el</a>, 2015-Oct-30, 7.59kB</p>
+<p>Maintainer: Lars Magne Ingebrigtsen &lt;larsi@gnus.org></p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/svg.html">http://elpa.gnu.org/packages/svg.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/svg">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/svg">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This pacakge allows creating SVG images in Emacs.  SVG images are
+vector-based XML files, really, so you could create them directly
+as XML.  However, that's really tedious, as there are some fiddly
+bits.
+
+In addition, the `svg-insert-image' function allows inserting an
+SVG image into a buffer that's updated "on the fly" as you
+add/alter elements to the image, which is useful when composing the
+images.
+
+Here are some usage examples:
+
+Create the base image structure, add a gradient spec, and insert it
+into the buffer:
+(setq svg (svg-create 800 800 :stroke "orange" :stroke-width 5))
+(svg-gradient svg "gradient" 'linear '(0 . "red") '(100 . "blue"))
+(save-excursion (goto-char (point-max)) (svg-insert-image svg))
+
+Then add various elements to the structure:
+(svg-rectangle svg 100 100 500 500 :gradient "gradient" :id "rec1")
+(svg-circle svg 500 500 100 :id "circle1")
+(svg-ellipse svg 100 100 50 90 :stroke "red" :id "ellipse1")
+(svg-line svg 100 190 50 100 :id "line1" :stroke "yellow")
+(svg-polyline svg '((200 . 100) (500 . 450) (80 . 100))
+	      :stroke "green" :id "poly1")
+(svg-polygon svg '((100 . 100) (200 . 150) (150 . 90))
+	     :stroke "blue" :fill "red" :id "gon1")
+</pre>
+</body>

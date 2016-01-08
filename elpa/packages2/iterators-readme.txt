@@ -1,0 +1,1 @@
+This package extends "generator.el" with higher-level functions.

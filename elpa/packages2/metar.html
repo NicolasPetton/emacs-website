@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - metar</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Retrieve and decode METAR weather information</p>
+<p>Latest: <a href="metar-0.1.el">metar-0.1.el</a>, 2015-Oct-30, 23.6kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/metar.html">http://elpa.gnu.org/packages/metar.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/metar">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/metar">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Run `M-x metar RET' to get a simple weather report from weather.noaa.gov.
+The value of `calendar-latitude' and `calendar-longitude' will be used to
+automatically determine a nearby station.  If these variables are not set,
+you will be prompted to enter the location manually.
+
+With `C-u M-x metar RET', country and station name need to be entered.
+`C-u C-u M-x metar RET' will prompt for the METAR station code (4 letters).
+
+Customize `metar-units' to change length, speed, temperature or pressure
+units to your liking.
+
+For programmatic access to decoded weather reports, use:
+
+  (metar-decode (metar-get-record "CODE"))
+</pre>
+</body>

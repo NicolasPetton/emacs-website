@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - web-server</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Emacs Web Server</p>
+<p>Latest: <a href="web-server-0.1.1.tar">web-server-0.1.1.tar</a>, 2015-Oct-30, 50.0kB</p>
+<p>Maintainer: Eric Schulte &lt;schulte.eric@gmail.com></p>
+<p>Home page: <a href="https://github.com/eschulte/emacs-web-server">https://github.com/eschulte/emacs-web-server</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/web-server">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/web-server">Gitweb</a></p>
+<h2>Full description</h2><pre>
+                           Emacs Web Server
+
+DESCRIPTION
+    A web server in Emacs running handlers written in Emacs Lisp.
+
+REQUIREMENTS
+    Emacs 24.3 or later.
+
+STATUS
+    Supports HTTP GET and POST requests including URL-encoded
+    parameters, multipart/form data and file uploads.  Supports web
+    sockets.  Reasonably performant, faster than Elnode [1].  This is
+    a new project without much extended use so there are likely bugs
+    and potentially security issues.  That said it consists of little
+    more than HTTP header parsing logic perched atop Emacs' existing
+    network process primitives, so it should be fairly robust.
+
+    [1]  http://eschulte.github.io/emacs-web-server/benchmark/
+
+USAGE
+    See the examples/ directory in this repository for examples
+    demonstrating usage.  The Emacs web-server is also used to run a
+    paste server [2], serve editable Org-mode pages [3] and serve
+    files for Cask [4].
+
+    [2]  https://github.com/eschulte/el-sprunge
+    [3]  https://github.com/eschulte/org-ehtml
+    [4]  https://github.com/cask/cask
+
+    Available from the GNU ELPA [5].  The tutorials page [6] walks
+    through usage scenarios including installing the Emacs web-server
+    and running it behind a proxy.
+
+    [5]  http://elpa.gnu.org/
+    [6]  http://eschulte.github.io/emacs-web-server/tutorials/
+
+    Run `make check' to run the included test suite.
+
+DOCUMENTATION
+    Run `make doc' to build the texinfo documentation, also available
+    online [6].
+
+    [6]  http://eschulte.github.io/emacs-web-server
+
+</pre>
+</body>

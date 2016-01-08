@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - diff-hl</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Highlight uncommitted changes</p>
+<p>Latest: <a href="diff-hl-1.8.0.tar">diff-hl-1.8.0.tar</a>, 2015-Oct-30, 50.0kB</p>
+<p>Home page: <a href="https://github.com/dgutov/diff-hl">https://github.com/dgutov/diff-hl</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/diff-hl">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/diff-hl">Gitweb</a></p>
+<h2>Full description</h2><pre>
+`diff-hl-mode' highlights uncommitted changes on the side of the
+window (using the fringe, by default), allows you to jump between
+the hunks and revert them selectively.
+
+Provided commands:
+
+`diff-hl-diff-goto-hunk'  C-x v =
+`diff-hl-revert-hunk'     C-x v n
+`diff-hl-previous-hunk'   C-x v [
+`diff-hl-next-hunk'       C-x v ]
+
+The mode takes advantage of `smartrep' if it is installed.
+
+Add either of the following to your init file.
+
+To use it in all buffers:
+
+(global-diff-hl-mode)
+
+Only in `prog-mode' buffers, with `vc-dir' integration:
+
+(add-hook 'prog-mode-hook 'turn-on-diff-hl-mode)
+(add-hook 'vc-dir-mode-hook 'turn-on-diff-hl-mode)
+</pre>
+</body>

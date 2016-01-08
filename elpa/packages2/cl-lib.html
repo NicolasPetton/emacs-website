@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - cl-lib</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: Properly prefixed CL functions and macros</p>
+<p>Latest: <a href="cl-lib-0.5.el">cl-lib-0.5.el</a>, 2015-Oct-30, 13.3kB</p>
+<p>Home page: <a href="http://elpa.gnu.org/packages/cl-lib.html">http://elpa.gnu.org/packages/cl-lib.html</a></p>
+<p>Browse repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/tree/packages/cl-lib">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=tree;f=packages/cl-lib">Gitweb</a></p>
+<h2>Full description</h2><pre>
+This is a forward compatibility package, which provides (a subset of) the
+features of the cl-lib package introduced in Emacs-24.3, for use on
+previous emacsen.
+
+Make sure this is installed *late* in your `load-path`, i.e. after Emacs's
+built-in .../lisp/emacs-lisp directory, so that if/when you upgrade to
+Emacs-24.3, the built-in version of the file will take precedence, otherwise
+you could get into trouble (although we try to hack our way around the
+problem in case it happens).
+
+This code is largely copied from Emacs-24.3's cl.el, with the alias bindings
+simply reversed.
+</pre>
+</body>

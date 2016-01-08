@@ -1,0 +1,1 @@
+poker.el provides texas hold'em poker gameplay for Emacs.

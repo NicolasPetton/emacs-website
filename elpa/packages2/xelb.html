@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+    <head>
+        <title>GNU ELPA - xelb</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="../favicon.png">
+        <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" type="text/css" href="../layout.css">
+        <script src="../javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="../javascript/jquery.filtertable.min.js" type="text/javascript"></script>
+        <script src="../javascript/package-search.js" type="text/javascript"></script>
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+            <div class="header small">
+                <div class="container">
+                    <h1>Package list</h1>
+                </div>
+            </div>
+
+            <div class="container">
+<p>Description: X protocol Emacs Lisp Binding</p>
+<p>Latest: <a href="xelb-0.2.tar">xelb-0.2.tar</a>, 2015-Oct-30,  740kB</p>
+<p>Maintainer: Chris Feng &lt;chris.w.feng@gmail.com></p>
+<p>Home page: <a href="https://github.com/ch11ng/xelb">https://github.com/ch11ng/xelb</a></p>
+<p>Browse ELPA's repository: <a href="http://git.savannah.gnu.org/cgit/emacs/elpa.git/?h=externals/xelb">CGit</a> or <a href="http://git.savannah.gnu.org/gitweb/?p=emacs/elpa.git;a=shortlog;h=refs/heads/externals/xelb">Gitweb</a></p>
+<h2>Full description</h2><pre>
+Overview
+--------
+XELB (X protocol Emacs Lisp Binding) is a pure Elisp implementation of X11
+protocol based on the XML description files from XCB project.  It features
+an object-oriented API and permits a certain degree of concurrency.  It
+should enable you to implement some low-level X11 applications.
+
+How it works
+------------
+As is well known, X11 is a network-transparent protocol.  All its messages,
+including requests, replies, events, errors, etc are transported over
+network.  Considering that Emacs is powerful enough to do network
+communication, it is also possible to use Emacs to send / receive those X11
+messages.  Here we fully exploit the asynchronous feature of network
+connections in Emacs, making XELB concurrent in a sense.
+
+X11 protocol is somewhat complicated, especially when extension protocols
+are also concerned.  Fortunately, XCB project has managed to describe these
+protocols as XML files, which are language-neutral and can be used to
+generate language-specific bindings.  In XELB, X messages are represented as
+'classes', and their 'methodes' are provided to translate them to / from raw
+byte arrays conveniently.
+
+Usage
+-----
+Interfaces are mainly defined in 'xcb.el'.  Please refer to that file on how
+to use them.  Most of other files are either X11 core / extension protocol
+libraries (e.g. xcb-randr.el) or utility libraries (e.g. xcb-keysyms.el).
+Please check the corresponding files for more details.
+</pre>
+</body>
