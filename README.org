@@ -1,0 +1,5 @@
+* Emacs website
+
+This repository contains my work on the new [Emacs
+website](nicolas-petton.fr/ressources/emacs-website), as well as the new [ELPA
+website](http://nicolas-petton.fr/ressources/elpa/).
