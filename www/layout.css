@@ -441,6 +441,14 @@ li {
   border-color: #666;
 }
 
+.releases p+ul {
+  margin-top: -1em;
+}
+
+.releases ul+p {
+  margin-top: 2em;
+}
+
 .footer {
   border-top: 4px solid #333;
   padding-top: 15px;
