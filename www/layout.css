@@ -110,7 +110,7 @@ a:hover {
 tt, code, kbd {
   background-color: #333;
   border: 1px solid #111;
-  padding: 0px 6px;
+  padding: 2px 6px 0px;
   border-radius: 4px;
   color: #ddd;
 }
