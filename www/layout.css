@@ -82,6 +82,11 @@ html, body {
   height: 200px; /* .push must be the same height as .footer */
 }
 
+.clear {
+  overflow: auto;
+  clear: both;
+}
+
 h1 {
   font-size: 2.1em;
   font-weight: bold;
@@ -171,6 +176,41 @@ li {
   text-decoration: underline;
 }
 
+.header nav.gnu-nav {
+  margin: 0;
+  background: #fcfbfa;
+}
+
+.header nav.gnu-nav .gnu-logo {
+  padding: 0;
+}
+
+.header nav.gnu-nav .gnu-logo img {
+  height: 34px;
+  vertical-align: bottom;
+}
+
+.header nav.gnu-nav a {
+  color: #817F7F;
+  font-size: .9em;
+  padding: 0;
+}
+
+.header nav.gnu-nav a:after {
+  content: '·';
+  padding: 0 5px;
+  color: #817F7F;
+  font-size: .9em;
+}
+
+.header nav.gnu-nav a:last-child:after {
+  content: '';
+}
+
+.header nav.gnu-nav a:first-child:after {
+  content: '';
+}
+
 .header .container {
   padding-top: 40px;
   padding-bottom: 350px;
@@ -247,6 +287,10 @@ li {
   margin-left: 0;
 }
 
+.header .links li:first-child {
+  border-bottom: 2px dashed #444;
+}
+
 .header .links span {
   margin-bottom: 10px;
   display: block;
@@ -279,10 +323,6 @@ li {
   background: #7F5AB6;
   color: white;
   text-align: center;
-}
-
-.header .links a.btn.gnu-linux {
-  margin-bottom: 40px;
 }
 
 .header .links a.btn:hover {
@@ -345,6 +385,66 @@ li {
 .fsf-banner .container {
   padding: 20px;
 }
+
+#join-fsf {
+  margin: 20px 0 0 0;
+  width: auto;
+}
+
+#join-fsf a {
+  margin: 20px 0 0 0;
+  background: #ddd;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 10px 20px;
+  color: #b11107;
+  font-weight: bold;
+  text-decoration: none;
+  border: 4px solid white;
+  font-size: 1.4em;
+}
+
+.fsf-banner .right {
+  float: right;
+}
+
+#fssbox {
+  float:left;
+  margin-top: 40px;
+  width: auto;
+}
+
+#fssbox p {
+  margin-left: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#fssbox p a {
+  font-size: 1.2em;
+  color: white;
+}
+
+#fssbox input[type='text'] {
+  border: 2px solid #840902;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+#fssbox input[type='submit'] {
+  background: #ddd;
+  margin-left: 5px;
+  display: inline-block;
+  border-radius: 16px;
+  padding: 2px 8px;
+  font-weight: bold;
+  color: #b11107;
+  font-weight: bold;
+  text-decoration: none;
+  border: 4px solid white;
+}
+
 
 .videos {
   background: #624195;
@@ -546,6 +646,10 @@ li {
     padding: 10px;
   }
 
+  .header .links li:first-child {
+    border: 0 none;
+  }
+
   .header .links .btns {
     overflow: hidden;
   }
@@ -688,9 +792,13 @@ li {
     padding: 10px;
     display: block;
     text-align: left;
-    border-top: 1px solid #666;
+    border-top: 1px solid #999;
     font-size: 1.2em;
     font-weight: 400;
+  }
+
+  .header nav.gnu-nav a {
+    border-color: #ccc;
   }
 
   .fsf-banner img {
@@ -699,6 +807,17 @@ li {
 
   .fsf-banner p {
     margin-left: 0;
+    text-align: center;
+  }
+
+  .fsf-banner .right {
+    text-align: left;
+    float: left;
+  }
+
+  #join-fsf {
+    text-align: center;
+    width: 100%;
   }
 }
 
