@@ -17,17 +17,23 @@
         <div class="wrapper">
             <div class="header">
                 <div class="nav-mobile">
-                    <!-- <div class="logo">
-                         <img src="images/emacs.png" alt="Emacs"/>
-                         <h1>GNU Emacs</h1>
-                         </div> -->
                     <button type="button" class="nav-toggle">
                         <span class="bar"></span>
                         <span class="bar"></span>
                         <span class="bar"></span>
                     </button>
                 </div>
-                <nav>
+                <nav class="gnu-nav">
+                    <a href="https://gnu.org" class="gnu-logo"><img alt="GNU" src="images/gnu.transparent.png"/></a>
+                    <a href="/gnu/gnu.html">About GNU</a>
+                    <a href="/philosophy/philosophy.html">Philosophy</a>
+                    <a href="/licenses/licenses.html">Licenses</a>
+                    <a href="/education/education.html">Education</a>
+                    <a href="/software/software.html">Software</a>
+                    <a href="/doc/doc.html">Documentation</a>
+                    <a href="/help/help.html">Help GNU</a>
+                </nav>
+                <nav class="main">
                     <a href="#features">Features</a>
                     <a href="#Obtaining">Download</a>
                     <a href="#Releases">Releases</a>
@@ -50,7 +56,7 @@
                             <li><a href="#" class="btn windows"><i class="fa fa-windows"></i>Windows</a></li>
                             <li><a href="#" class="btn macosx"><i class="fa fa-apple"></i>OS X</a></li>
                         </ul>
-                        <a href="#Obtaining" class="more">More downloads...</a>
+                        <a href="#Obtaining" class="more">More downloads</a>
                     </div>
 
                     <img class="teaser" src="images/teaser.png" alt=""/>
@@ -68,8 +74,7 @@
                     <ul>
                         <li class="modes">
                             Content-aware editing modes, including syntax
-                            coloring, for dozens of file types including plain
-                            text, source code, and HTML.
+                            coloring, for many file types.
                         </li>
                         <li class="documentation">
                             Complete built-in documentation, including a
@@ -205,41 +210,61 @@
                 <div class="container">
                     <a href="http://www.fsf.org"><img src="images/fsf.png" alt="Free Software Fundation"/></a>
                     <p>“Our mission is to preserve, protect and promote the freedom to use, study, copy, modify, and redistribute computer software, and to defend the rights of Free Software users.”</p>
+                    <div class="clear"></div>
+
+                    <div id="fssbox">
+                        <p><a href="http://www.fsf.org/fss">Free Software Supporter</a></p>
+                        <form action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31" method="post">
+                            <div>
+                                <input name="postURL" type="hidden" value="" />
+                                <input type="hidden" name="group[25]" value="1" />
+                                <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+                                <input name="_qf_default" type="hidden" value="Edit:cancel" />
+                            </div>
+                            <p>
+                                <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
+                                       placeholder="email address" onfocus="this.value=''"/>
+                                <input type="submit" name="_qf_Edit_next" value="Sign up" />
+                            </p>
+                        </form>
+                    </div>
+
+                    <p id="join-fsf"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a></p>
                 </div>
             </div>
 
             <div class="push"></div>
-        </div>
+            </div>
 
-        <div class="footer">
-            <div class="container">
-                <nav>
-                    <a href="#features">Features</a>
-                    <a href="#Obtaining">Download</a>
-                    <a href="#Releases">Releases</a>
-                    <a href="documentation.html">Documentation</a>
-                    <a href="tour.html">Tour</a>
-                    <a href="support.html">Support</a>
-                    <a href="further-information.html">Further information</a>
-                </nav>
-                <div class="left">
-                    <p>
-                        Copyright 2015 <a href="https://fsf.org">Free Software Foundation</a>, Inc. <br/>
-                        <address>51 Franklin St, Fifth Floor, Boston, MA 02110, USA</address>
-                    </p>
-                    <p>Design provided by <a href="http://nicolas-petton.fr">Nicolas Petton</a>.</p>
-                    
-                </div>
-                <div class="right">
-                    <p>
-                        Please send comments to
-                        <a href="http://mail.gnu.org/mailman/listinfo/bug-gnu-emacs">bug-gnu-emacs@gnu.org</a>.
-                    </p>
-                    <p>This website is licensed under the <a href="https://creativecommons.org/licenses/by-nd/3.0/us/">CC BY-ND 3.0 US</a> License.
-                    </p>
+            <div class="footer">
+                <div class="container">
+                    <nav>
+                        <a href="#features">Features</a>
+                        <a href="#Obtaining">Download</a>
+                        <a href="#Releases">Releases</a>
+                        <a href="documentation.html">Documentation</a>
+                        <a href="tour.html">Tour</a>
+                        <a href="support.html">Support</a>
+                        <a href="further-information.html">Further information</a>
+                    </nav>
+                    <div class="left">
+                        <p>
+                            Copyright 2015 <a href="https://fsf.org">Free Software Foundation</a>, Inc. <br/>
+                            <address>51 Franklin St, Fifth Floor, Boston, MA 02110, USA</address>
+                        </p>
+                        <p>Design provided by <a href="http://nicolas-petton.fr">Nicolas Petton</a>.</p>
+                        
+                    </div>
+                    <div class="right">
+                        <p>
+                            Please send comments to
+                            <a href="http://mail.gnu.org/mailman/listinfo/bug-gnu-emacs">bug-gnu-emacs@gnu.org</a>.
+                        </p>
+                        <p>This website is licensed under the <a href="https://creativecommons.org/licenses/by-nd/3.0/us/">CC BY-ND 3.0 US</a> License.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
     </body>
 </html>

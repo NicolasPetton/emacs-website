@@ -60,7 +60,7 @@
 
 	function setupMobileNav() {
 		$('.nav-toggle').click(function() {
-			$('nav').toggle();
+			$('nav.main').toggle();
 		});
 	}
 
