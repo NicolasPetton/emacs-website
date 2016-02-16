@@ -49,7 +49,7 @@
 		$('a').click(function(evt) {
 			var anchor = $(evt.target).closest('a');
 			var href = anchor.attr('href');
-			if(href[0] === '#') {
+			if(href && href[0] === '#') {
 				scrollToAnchor(href, function() {
 					window.location = href;
 				});
@@ -64,8 +64,36 @@
 		});
 	}
 
+	function setupVideoAnchors() {
+		$('#videos li a').click(function(evt) {
+			var videoURL = $(evt.target).attr('href');
+			showVideo(videoURL);
+			evt.preventDefault();
+		});
+
+		$('#video-player .close').click(hideVideo);
+	}
+
+	function showVideo(url) {
+		var container = $('#video-player');
+		container.find('.container').append('<video id ="emacs-rocks-12" controls>' +
+            '<source src="' + url + '">' +
+            'Your browser does not support the video tag.' +
+            '</video>');
+		$('#videos .container').hide();
+		container.show();
+	}
+
+	function hideVideo() {
+		var container = $('#video-player');
+		container.find('.container').html('');
+		container.hide();
+		$('#videos .container').show();
+	}
+
 	$(function() {
 		setupAnchors();
+		setupVideoAnchors();
 		setupMobileNav();
 	});
 })();
