@@ -213,7 +213,7 @@ li {
 
 .header .container {
   padding-top: 40px;
-  padding-bottom: 350px;
+  padding-bottom: 0;
   position: relative;
   overflow: hidden;
 }
@@ -248,10 +248,9 @@ li {
 }
 
 .header .teaser {
-  position: absolute;
-  left: 100px;
-  bottom: 0;
-  box-shadow: 0 0 10px 0 #666; 
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
 .header p {
