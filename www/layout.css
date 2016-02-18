@@ -621,7 +621,7 @@ li {
   border-color: #666;
 }
 
-.releases ul, .releases p+p {
+.releases ul, .releases p {
   text-align: left;
 }
 
