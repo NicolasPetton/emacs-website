@@ -114,9 +114,14 @@ h1 span {
 
 h2 {
   font-size: 2em;
-  margin: .8em 0px .4em;
+  margin: .8em 0 .4em;
   font-weight: 500;
   line-height: 2em;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: .8em 0;
 }
 
 a {
@@ -461,6 +466,17 @@ li {
 }
 
 
+.tour-banner {
+  font-size: 1.2em;
+  text-align: center;
+  background: #4F3774;
+  color: white;
+}
+
+.tour-banner .container {
+  padding: 10px 0;
+}
+
 .videos, #video-player {
   background: #624195;
   color: #fafafa;
@@ -536,7 +552,7 @@ li {
   padding-top: 20px;
 }
 
-.features a, .videos a {
+.features a, .videos a, .tour-banner a {
   color: #FFDE8F;
   text-decoration: none;
 }
@@ -593,7 +609,7 @@ li {
 .releases {
   color: #3F3B3B;
   background: #F0EBDE;
-  /* border-top: 1px solid #e5e5c8; */
+  text-align: center;
 }
 
 .releases code,
@@ -605,12 +621,17 @@ li {
   border-color: #666;
 }
 
+.releases ul, .releases p+p {
+  text-align: left;
+}
+
 .releases p+ul {
   margin-top: -1em;
 }
 
 .releases ul+p {
   margin-top: 2em;
+  text-align: left;
 }
 
 /* .downloading { */
