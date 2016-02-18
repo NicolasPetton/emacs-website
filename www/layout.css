@@ -58,6 +58,16 @@ table {
   border-spacing: 0;
 }
 
+pre {
+  font-family: monospace;
+  padding: 10px;
+  background: #efeadc;
+  margin: 20px 0px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1.2em;
+}
+
 /* End of reset */
 
 body {
@@ -93,6 +103,13 @@ h1 {
   margin: 0.4em;
   line-height: 1.5em;
   font-weight: 300;
+}
+
+h1 span {
+  font-weight: normal;
+  display: block;
+  font-size: 0.8em;
+  line-height: 1em;
 }
 
 h2 {
@@ -213,7 +230,7 @@ li {
 
 .header .container {
   padding-top: 40px;
-  padding-bottom: 0;
+  padding-bottom: 40px;
   position: relative;
   overflow: hidden;
 }
@@ -249,7 +266,6 @@ li {
 
 .header .teaser {
   margin-top: 40px;
-  margin-bottom: 40px;
   width: 100%;
 }
 
@@ -596,6 +612,10 @@ li {
 .releases ul+p {
   margin-top: 2em;
 }
+
+/* .downloading { */
+/*   background: #fcfbfa; */
+/* } */
 
 .footer {
   border-top: 4px solid #333;

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+    <head>
+        <title>GNU Emacs download - GNU Project</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" href="http://code.cdn.mozilla.net/fonts/fira.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <script src="javascript/jquery.min.js" type="text/javascript"></script>
+        <script src="javascript/animations.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="layout.css">
+        <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,width=device-width" />
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="nav-mobile">
+                    <button type="button" class="nav-toggle">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                </div>
+                <nav class="gnu-nav">
+                    <a href="https://gnu.org" class="gnu-logo"><img alt="GNU" src="images/gnu.transparent.png"/></a>
+                    <a href="/gnu/gnu.html">About GNU</a>
+                    <a href="/philosophy/philosophy.html">Philosophy</a>
+                    <a href="/licenses/licenses.html">Licenses</a>
+                    <a href="/education/education.html">Education</a>
+                    <a href="/software/software.html">Software</a>
+                    <a href="/doc/doc.html">Documentation</a>
+                    <a href="/help/help.html">Help GNU</a>
+                </nav>
+                <nav class="main">
+                    <a href="index.html#features">Features</a>
+                    <a href="download.html">Download</a>
+                    <a href="index.html#Releases">Releases</a>
+                    <a href="documentation.html">Documentation</a>
+                    <a href="tour.html">Tour</a>
+                    <a href="support.html">Support</a>
+                    <a href="further-information.html">Further information</a>
+                </nav>
+                <div class="container">
+                    <div class="logo">
+                        <img src="images/emacs.png" alt="Emacs"/>
+                        <h1>GNU Emacs <span>Download & installation</span></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="downloading">
+                <div class="container">
+
+                    <p id="gnu-linux">Most GNU/Linux distributions provide GNU Emacs in their
+                    repositories, which is the recommended way to install Emacs
+                        unless you always want to use the latest release.</p>
+
+                    <p>You can download GNU Emacs releases from a
+                        <a href="http://ftpmirror.gnu.org/emacs/">nearby GNU mirror</a>;
+                        or if automatic redirection does not work see the list of
+                        <a href="/order/ftp.html">GNU mirrors</a>, or use
+                        the <a href="http://ftp.gnu.org/gnu/emacs">main GNU ftp</a> server.
+                    </p>
+
+
+
+                    <p>GNU Emacs development is hosted on
+                        <a href="http://savannah.gnu.org/projects/emacs/">savannah.gnu.org</a>.</p>
+                    
+                    <h2><img src="images/debian.png" alt="Debian logo"/>
+                        Debian - <img src="images/ubuntu.png" alt="Ubuntu logo"/> Ubuntu
+                    </h2>
+
+                    Both Debian and Ubuntu provide GNU Emacs in their
+                    repositories. Use <code>apt-get</code> to install it:
+
+                    <pre>$ sudo apt-get install emacs</pre>
+
+                    <h2><img src="images/fedora.png" alt="Fedora"/> Fedora</h2>
+
+                    Fedora also provides GNU Emacs in its repository.
+
+                    <pre>$ sudo dnf install emacs</pre>
+
+                    <h2 id="windows"> <i class="fa fa-windows"></i> Windows</h2>
+
+                    <p>The reason for GNU Emacs's existence is to provide a
+                        powerful editor for the <a href="/gnu">GNU operating system</a>.
+                        Versions of GNU, such as <a href="/gnu/linux-and-gnu.html">GNU/Linux</a>,
+                        are the primary platforms for Emacs development.
+                        However, GNU Emacs also comes with support for some
+                        other systems, even proprietary systems
+                        that volunteers choose to support.
+                    </p>
+
+                    <p>GNU Emacs for Windows can be downloaded from a
+                        <a href="http://ftpmirror.gnu.org/emacs/windows"> nearby
+                        GNU mirror</a>; or the <a href="http://ftp.gnu.org/gnu/emacs/windows/">main
+                        GNU FTP server</a>.</p>
+
+                    <h2 id="osx"> <i class="fa fa-apple"></i> OS X</h2>
+
+                    <p>Emacs can be installed on OS X using <a href="http://brew.sh/">Homebrew</a>.</p>
+
+                    <pre>$ brew install emacs --cocoa</pre>
+
+                    <p>The <a href="http://emacsforosx.com/">Emacs for OSX</a> website also provides universal binaries.</p>
+
+                </div>
+            </div>
+            
+            <div class="push"></div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <nav>
+                    <a href="index.html#features">Features</a>
+                    <a href="download.html">Download</a>
+                    <a href="index.html#Releases">Releases</a>
+                    <a href="documentation.html">Documentation</a>
+                    <a href="tour.html">Tour</a>
+                    <a href="support.html">Support</a>
+                    <a href="further-information.html">Further information</a>
+                </nav>
+                <div class="left">
+                    <p>
+                        Copyright 2015 <a href="https://fsf.org">Free Software Foundation</a>, Inc. <br/>
+                        <address>51 Franklin St, Fifth Floor, Boston, MA 02110, USA</address>
+                    </p>
+                    <p>Design provided by <a href="http://nicolas-petton.fr">Nicolas Petton</a>.</p>
+                    
+                </div>
+                <div class="right">
+                    <p>
+                        Please send comments to
+                        <a href="http://mail.gnu.org/mailman/listinfo/bug-gnu-emacs">bug-gnu-emacs@gnu.org</a>.
+                    </p>
+                    <p>This website is licensed under the <a href="https://creativecommons.org/licenses/by-nd/3.0/us/">CC BY-ND 3.0 US</a> License.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
