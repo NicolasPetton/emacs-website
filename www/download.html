@@ -32,6 +32,7 @@
                     <a href="/software/software.html">Software</a>
                     <a href="/doc/doc.html">Documentation</a>
                     <a href="/help/help.html">Help GNU</a>
+                    <a class="join-fsf" href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a>
                 </nav>
                 <nav class="main">
                     <a href="index.html#features">Features</a>
@@ -44,7 +45,7 @@
                 </nav>
                 <div class="container">
                     <div class="logo">
-                        <img src="images/emacs.png" alt="Emacs"/>
+                        <a href="index.html"><img src="images/emacs.png" alt="Emacs"/></a>
                         <h1>GNU Emacs <span>Download & installation</span></h1>
                     </div>
                 </div>
@@ -97,14 +98,23 @@
 
                     <p>GNU Emacs for Windows can be downloaded from a
                         <a href="http://ftpmirror.gnu.org/emacs/windows"> nearby
-                        GNU mirror</a>; or the <a href="http://ftp.gnu.org/gnu/emacs/windows/">main
-                        GNU FTP server</a>.</p>
+                            GNU mirror</a>; or the <a href="http://ftp.gnu.org/gnu/emacs/windows/">main
+                            GNU FTP server</a>.
+                    </p>
 
+                    <p>MSYS2 users can install Emacs (64bits build) with the following:</p>
+                    <pre>pacman -S mingw-w64-x86_64-emacs</pre>
+
+                    For the 32bits build, evaluate:
+
+                    <pre>pacman -S mingw-w64-i686-emacs</pre>
                     <h2 id="osx"> <i class="fa fa-apple"></i> OS X</h2>
 
                     <p>Emacs can be installed on OS X using <a href="http://brew.sh/">Homebrew</a>.</p>
+                    <pre>$ brew install emacs --with-cocoa</pre>
 
-                    <pre>$ brew install emacs --cocoa</pre>
+                    <p> Using <a href="https://www.macports.org/">MacPorts</a>:</p>
+                    <pre>$ sudo port install emacs-app</pre>
 
                     <p>The <a href="https://emacsformacosx.com/">Emacs for OSX</a> website also provides universal binaries.</p>
 

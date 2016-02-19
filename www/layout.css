@@ -218,6 +218,12 @@ li {
   padding: 0;
 }
 
+.header nav.gnu-nav a:hover {
+  color: #525151;
+  text-decoration: none;
+}
+
+
 .header nav.gnu-nav a:after {
   content: '·';
   padding: 0 5px;
@@ -227,10 +233,25 @@ li {
 
 .header nav.gnu-nav a:last-child:after {
   content: '';
+  padding: 0;
 }
 
 .header nav.gnu-nav a:first-child:after {
   content: '';
+}
+
+.header nav.gnu-nav a.join-fsf {
+  text-align: center;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 2px 18px;
+  background: #817F7F;
+  color: white;
+  text-decoration: none;
+}
+
+.header nav.gnu-nav a.join-fsf:hover {
+  background: #525151;
 }
 
 .header .container {
