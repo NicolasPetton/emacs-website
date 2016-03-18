@@ -181,28 +181,33 @@
 
             <div class="fsf-banner">
                 <div class="container">
-                    <a href="http://www.fsf.org"><img src="images/fsf.png" alt="Free Software Fundation"/></a>
-                    <p>“Our mission is to preserve, protect and promote the freedom to use, study, copy, modify, and redistribute computer software, and to defend the rights of Free Software users.”</p>
+                    <div class="left">
+                        <a class="fsf-logo" href="http://www.fsf.org"><img src="images/fsf.png" alt="Free Software Fundation"/></a>
+                        <div id="fssbox">
+                            <p>Subscribe to our monthly newsletter, the <a href="http://www.fsf.org/fss">Free Software Supporter</a></p>
+                            <form action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31" method="post">
+                                <div>
+                                    <input name="postURL" type="hidden" value="" />
+                                    <input type="hidden" name="group[25]" value="1" />
+                                    <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
+                                    <input name="_qf_default" type="hidden" value="Edit:cancel" />
+                                </div>
+                                <p>
+                                    <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
+                                           placeholder="email address" onfocus="this.value=''"/>
+                                    <input type="submit" name="_qf_Edit_next" value="Sign up" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p>“Our mission is to preserve, protect and promote the freedom to use, study, copy, modify, and redistribute computer software, and to defend the rights of Free Software users.”</p>
+                        <p id="join-fsf"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a></p>
+                    </div>
                     <div class="clear"></div>
 
-                    <div id="fssbox">
-                        <p><a href="http://www.fsf.org/fss">Free Software Supporter</a></p>
-                        <form action="https://my.fsf.org/civicrm/profile/create?reset=1&amp;gid=31" method="post">
-                            <div>
-                                <input name="postURL" type="hidden" value="" />
-                                <input type="hidden" name="group[25]" value="1" />
-                                <input name="cancelURL" type="hidden" value="https://crm.fsf.org/civicrm/profile?reset=1&amp;gid=31" />
-                                <input name="_qf_default" type="hidden" value="Edit:cancel" />
-                            </div>
-                            <p>
-                                <input type="text" id="frmEmail" name="email-Primary" size="18" maxlength="80"
-                                       placeholder="email address" onfocus="this.value=''"/>
-                                <input type="submit" name="_qf_Edit_next" value="Sign up" />
-                            </p>
-                        </form>
-                    </div>
 
-                    <p id="join-fsf"><a href="https://www.fsf.org/associate/support_freedom?referrer=4052">JOIN&nbsp;THE&nbsp;FSF</a></p>
+
                 </div>
             </div>
 

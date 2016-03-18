@@ -409,22 +409,30 @@ li {
   padding: 10px 0;
 }
 
+.fsf-banner .container {
+  padding: 20px;
+}
+
+.fsf-logo {
+  display: inline-block;
+}
+
+.fsf-banner .left {
+  float: left;
+  width: 50%;
+}
+
+.fsf-banner .right {
+  float: right;
+  width: 50%;
+}
+
 .fsf-banner img {
   float: left;
 }
 
 .fsf-banner p {
-  font-size: .8em;
-  line-height: 1.3em;
-  float: left;
-  margin: 0;
-  margin-left: 40px;
-  width: 560px;
   font-style: italic;
-}
-
-.fsf-banner .container {
-  padding: 20px;
 }
 
 #join-fsf {
@@ -445,25 +453,23 @@ li {
   font-size: 1.4em;
 }
 
-.fsf-banner .right {
-  float: right;
+#fssbox {
+  padding-top: 40px;
 }
 
-#fssbox {
-  float:left;
-  margin-top: 40px;
-  width: auto;
+#fssbox form {
+  margin-bottom: 40px;
 }
 
 #fssbox p {
   margin-left: 0;
   margin-bottom: 5px;
-  font-weight: bold;
+  margin-right: 20px;
   font-style: normal;
 }
 
 #fssbox p a {
-  font-size: 1.2em;
+  font-weight: bold;
   color: white;
 }
 
@@ -829,6 +835,11 @@ li {
     width: auto;
     margin: 20px 5%;
     float: none;
+  }
+
+  .fsf-banner .right, .fsf-banner .left {
+    float: none;
+    width: auto;
   }
 }
 
