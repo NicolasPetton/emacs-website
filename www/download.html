@@ -46,7 +46,8 @@
                 <div class="container">
                     <div class="logo">
                         <a href="index.html"><img src="images/emacs.png" alt="Emacs"/></a>
-                        <h1>GNU Emacs <span>Download & installation</span></h1>
+                        <h1>GNU Emacs</h1>
+                        <h2>Download & installation</h2>
                     </div>
                 </div>
             </div>
@@ -54,9 +55,17 @@
             <div class="downloading">
                 <div class="container">
 
-                    <p id="gnu-linux">Most GNU/Linux distributions provide GNU Emacs in their
-                    repositories, which is the recommended way to install Emacs
-                        unless you always want to use the latest release.</p>
+                    <p> Emacs runs on several operating systems regardless of
+                    the machine type. The main ones are: GNU, GNU/Linux,
+                    FreeBSD, NetBSD, OpenBSD, OS X, MS Windows and Solaris.
+                    </p>
+
+                    <h2>GNU/Linux</h2>
+
+                    <p id="gnu-linux">Most GNU/Linux distributions provide GNU
+                        Emacs in their repositories, which is the recommended
+                        way to install Emacs unless you always want to use the
+                        latest release.</p>
 
                     <p>You can download GNU Emacs releases from a
                         <a href="http://ftpmirror.gnu.org/emacs/">nearby GNU mirror</a>;
@@ -65,58 +74,59 @@
                         the <a href="http://ftp.gnu.org/gnu/emacs">main GNU ftp</a> server.
                     </p>
 
-
-
                     <p>GNU Emacs development is hosted on
-                        <a href="http://savannah.gnu.org/projects/emacs/">savannah.gnu.org</a>.</p>
+                        <a href="http://savannah.gnu.org/projects/emacs/">savannah.gnu.org</a>.
+                    </p>
                     
-                    <h2><img src="images/debian.png" alt="Debian logo"/>
-                        Debian - <img src="images/ubuntu.png" alt="Ubuntu logo"/> Ubuntu
-                    </h2>
-
-                    Both Debian and Ubuntu provide GNU Emacs in their
-                    repositories. Use <code>apt-get</code> to install it:
-
-                    <pre>$ sudo apt-get install emacs</pre>
-
-                    <h2><img src="images/fedora.png" alt="Fedora"/> Fedora</h2>
-
-                    Fedora also provides GNU Emacs in its repository.
-
-                    <pre>$ sudo dnf install emacs</pre>
-
-                    <h2 id="windows"> <i class="fa fa-windows"></i> Windows</h2>
+                    <h2>Nonfree systems</h2>
 
                     <p>The reason for GNU Emacs's existence is to provide a
                         powerful editor for the <a href="/gnu">GNU operating system</a>.
                         Versions of GNU, such as <a href="/gnu/linux-and-gnu.html">GNU/Linux</a>,
                         are the primary platforms for Emacs development.
-                        However, GNU Emacs also comes with support for some
-                        other systems, even proprietary systems
-                        that volunteers choose to support.
                     </p>
 
-                    <p>GNU Emacs for Windows can be downloaded from a
-                        <a href="http://ftpmirror.gnu.org/emacs/windows"> nearby
-                            GNU mirror</a>; or the <a href="http://ftp.gnu.org/gnu/emacs/windows/">main
-                            GNU FTP server</a>.
+                    <p>However, GNU Emacs includes support for some other
+                    systems that volunteers choose to support.</p>
+
+                    <p>The purpose of the GNU system is to <a href="/philosophy/free-software-even-more-important.html">
+                        give users the freedom that proprietary software takes away from its users</a>.
+                        Proprietary operating systems (like other proprietary programs) are an injustice,
+                        and we aim for a world in which they do not exist.
                     </p>
 
-                    <p>MSYS2 users can install Emacs (64bits build) with the following:</p>
-                    <pre>pacman -S mingw-w64-x86_64-emacs</pre>
+                    <p>To improve the use of proprietary systems is a misguided
+                        goal.  Our aim, rather, is to eliminate them.  We
+                        include support for some proprietary systems in GNU
+                        Emacs in the hope that running Emacs on them will give
+                        users a taste of freedom and thus lead them to free
+                        themselves.
+                    </p>
 
-                    For the 32bits build, evaluate:
+                        <h3 id="windows">Windows</h2>
 
-                    <pre>pacman -S mingw-w64-i686-emacs</pre>
-                    <h2 id="osx"> <i class="fa fa-apple"></i> OS X</h2>
+                            <p>GNU Emacs for Windows can be downloaded from a
+                                <a href="http://ftpmirror.gnu.org/emacs/windows"> nearby
+                                    GNU mirror</a>; or the <a href="http://ftp.gnu.org/gnu/emacs/windows/">main
+                                    GNU FTP server</a>.
+                            </p>
 
-                    <p>Emacs can be installed on OS X using <a href="http://brew.sh/">Homebrew</a>.</p>
-                    <pre>$ brew install emacs --with-cocoa</pre>
+                            <p>MSYS2 users can install Emacs (64bits build) with the following:</p>
+                            <pre>pacman -S mingw-w64-x86_64-emacs</pre>
 
-                    <p> Using <a href="https://www.macports.org/">MacPorts</a>:</p>
-                    <pre>$ sudo port install emacs-app</pre>
+                            For the 32bits build, evaluate:
 
-                    <p>The <a href="https://emacsformacosx.com/">Emacs for OSX</a> website also provides universal binaries.</p>
+                            <pre>pacman -S mingw-w64-i686-emacs</pre>
+                            <h3 id="osx">OS X</h2>
+
+                                <p>Emacs can be installed on OS X using <a href="http://brew.sh/">Homebrew</a>.</p>
+                                <pre>$ brew install emacs --with-cocoa</pre>
+
+                                <p> Using <a href="https://www.macports.org/">MacPorts</a>:</p>
+                                <pre>$ sudo port install emacs-app</pre>
+
+                                <p>The <a href="https://emacsformacosx.com/">Emacs
+                                for OSX</a> website also provides universal binaries.</p>
 
                 </div>
             </div>
